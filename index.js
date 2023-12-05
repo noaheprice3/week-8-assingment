@@ -3,13 +3,13 @@
 // HERE IS A CLASS FOR A STUDENT
 
 class Student {
-    constructor(name, grade) {
+    constructor(name, age) {
         this.name = name;
         this.age = age;
     }
 
     describe() {
-        return `${this.name} is in ${this.age}.`; 
+        return `${this.name} is ${this.age}.`; 
     }
 }
 
@@ -148,7 +148,7 @@ class Menu {
 
     createStudent() {
         let name = prompt('Enter name for new student:');
-        let grade = prompt('Enter age of new student:');
+        let age = prompt('Enter age of new student:');
         this.selectedClassroom.student.push(new Student(name, age));
     }
 
